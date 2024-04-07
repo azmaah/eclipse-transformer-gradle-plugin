@@ -26,13 +26,14 @@ configurations["functionalTestImplementation"].extendsFrom(configurations["testI
 
 gradlePlugin {
     website.set("https://github.com/azmaah/eclipse-transformer-gradle-plugin")
-    vcsUrl.set("https://github.com/azmaah/eclipse-transformer-gradle-plugin.git")
+    vcsUrl.set("https://github.com/azmaah/eclipse-transformer-gradle-plugin")
     plugins {
         val eclipseTransformerGradlePlugin by creating {
             id = "com.azmaah.eclipse.transformer"
             implementationClass = "com.azmaah.eclipse.transformer.TransformerPlugin"
             displayName = "Gradle Eclipse Transformer plugin"
             description = "A Gradle plugin to transform Java binaries using the Eclipse Transformer CLI."
+            tags.set(listOf("transform", "eclipse", "java"))
         }
     }
     testSourceSets(sourceSets.getByName("functionalTest"))
