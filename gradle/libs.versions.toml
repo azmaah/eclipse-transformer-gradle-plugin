@@ -1,5 +1,9 @@
 [versions]
+plugin-publish = "1.2.1"
 junit-jupiter = "5.10.0"
+
+[plugins]
+gradle-publish-plugin = { id = "com.gradle.plugin-publish", version.ref = "plugin-publish" }
 
 [libraries]
 junit = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit-jupiter" }
