@@ -41,7 +41,6 @@ The plugin offers customization options through the `eclipseTransformer` extensi
 | textMasterRules | [RegularFile](https://docs.gradle.org/current/javadoc/org/gradle/api/file/RegularFile.html) |
 
 * The default version for the CLI used is `0.5.0`.
-* The `sourceDir` property is a REQUIRED property for the `runTransformer` task, otherwise it will fail.
 
 ##### Example
 
