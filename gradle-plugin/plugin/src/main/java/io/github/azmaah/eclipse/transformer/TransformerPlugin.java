@@ -1,8 +1,8 @@
-package com.azmaah.eclipse.transformer;
+package io.github.azmaah.eclipse.transformer;
 
-import com.azmaah.eclipse.transformer.task.BaseTask;
-import com.azmaah.eclipse.transformer.task.Setup;
-import com.azmaah.eclipse.transformer.task.Transform;
+import io.github.azmaah.eclipse.transformer.task.BaseTask;
+import io.github.azmaah.eclipse.transformer.task.Setup;
+import io.github.azmaah.eclipse.transformer.task.Transform;
 import org.gradle.api.Plugin;
 import org.gradle.api.Project;
 import org.gradle.api.plugins.JavaPlugin;

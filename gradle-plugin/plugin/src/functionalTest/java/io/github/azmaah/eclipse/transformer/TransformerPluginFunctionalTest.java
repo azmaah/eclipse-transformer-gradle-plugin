@@ -1,4 +1,4 @@
-package com.azmaah.eclipse.transformer;
+package io.github.azmaah.eclipse.transformer;
 
 import org.gradle.testkit.runner.BuildResult;
 import org.gradle.testkit.runner.BuildTask;
@@ -36,7 +36,7 @@ class TransformerPluginFunctionalTest {
     writeString(getSettingsFile(), "");
     writeString(getBuildFile(),"""
       plugins {
-        id "com.azmaah.eclipse.transformer"
+        id "io.github.azmaah.eclipse-transformer"
       }
       
       repositories {
@@ -72,7 +72,7 @@ class TransformerPluginFunctionalTest {
     writeString(getSettingsFile(), "");
     writeString(getBuildFile(),"""
       plugins {
-        id "com.azmaah.eclipse.transformer"
+        id "io.github.azmaah.eclipse-transformer"
       }
       
       repositories {

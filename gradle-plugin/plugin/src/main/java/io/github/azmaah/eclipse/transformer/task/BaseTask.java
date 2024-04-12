@@ -1,4 +1,4 @@
-package com.azmaah.eclipse.transformer.task;
+package io.github.azmaah.eclipse.transformer.task;
 
 import org.gradle.api.DefaultTask;
 import org.gradle.api.file.Directory;

@@ -8,7 +8,7 @@ repositories {
 }
 
 version = "0.0.1"
-group = "com.azmaah.eclipse.transformer"
+group = "io.github.azmaah"
 
 dependencies {
     testImplementation(libs.junit)
@@ -30,8 +30,8 @@ gradlePlugin {
     vcsUrl.set("https://github.com/azmaah/eclipse-transformer-gradle-plugin")
     plugins {
         val eclipseTransformerGradlePlugin by creating {
-            id = "com.azmaah.eclipse.transformer"
-            implementationClass = "com.azmaah.eclipse.transformer.TransformerPlugin"
+            id = "io.github.azmaah.eclipse-transformer"
+            implementationClass = "io.github.azmaah.eclipse.transformer.TransformerPlugin"
             displayName = "Gradle Eclipse Transformer plugin"
             description = "A Gradle plugin to transform Java binaries using the Eclipse Transformer CLI."
             tags.set(listOf("transform", "eclipse", "java"))

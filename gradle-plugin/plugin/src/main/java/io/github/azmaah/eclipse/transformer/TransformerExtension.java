@@ -1,4 +1,4 @@
-package com.azmaah.eclipse.transformer;
+package io.github.azmaah.eclipse.transformer;
 
 import org.gradle.api.Project;
 import org.gradle.api.file.DirectoryProperty;

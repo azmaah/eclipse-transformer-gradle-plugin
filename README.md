@@ -8,7 +8,7 @@ To include this plugin, add the following to your build script (Kotlin DSL):
 
 ```kotlin
 plugins {
-  id("com.azmaah.eclipse.transformer") version "0.0.1"
+  id("io.github.azmaah.eclipse-transformer") version "0.0.1"
 }
 ```
 

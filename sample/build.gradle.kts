@@ -1,9 +1,9 @@
-import com.azmaah.eclipse.transformer.task.Transform
+import io.github.azmaah.eclipse.transformer.task.Transform
 
 plugins {
     id("base")
     id("java")
-    id("com.azmaah.eclipse.transformer")
+    id("io.github.azmaah.eclipse-transformer")
 }
 
 val libsDir = file(layout.buildDirectory.dir("libs"))

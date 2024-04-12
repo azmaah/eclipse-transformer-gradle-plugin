@@ -1,4 +1,4 @@
-package com.azmaah.eclipse.transformer;
+package io.github.azmaah.eclipse.transformer;
 
 import org.gradle.api.Project;
 import org.gradle.testfixtures.ProjectBuilder;
@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 class TransformerPluginTest {
   @Test void pluginRegistersTasks() {
     Project project = ProjectBuilder.builder().build();
-    project.getPlugins().apply("com.azmaah.eclipse.transformer");
+    project.getPlugins().apply("io.github.azmaah.eclipse-transformer");
 
     assertNotNull(project.getTasks().findByName("setupTransformer"));
     assertNotNull(project.getTasks().findByName("runTransformer"));
@@ -19,7 +19,7 @@ class TransformerPluginTest {
 
   @Test void pluginRegistersExtension() {
     Project project = ProjectBuilder.builder().build();
-    project.getPlugins().apply("com.azmaah.eclipse.transformer");
+    project.getPlugins().apply("io.github.azmaah.eclipse-transformer");
 
     Object extension = project.getExtensions().findByName("eclipseTransformer");
     assertNotNull(extension);
